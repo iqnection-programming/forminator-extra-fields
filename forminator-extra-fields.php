@@ -1,18 +1,34 @@
 <?php
 
-/*
-Plugin Name: Forminator Extra Fields
-Plugin URI: https://www.iqnection.com
-Description: Provides extra/extended fields to Forminator
-Version: 1.0.0
-Author: Mike Eckert
-*/
+/**
+ * Forminator Extra Fields
+ *
+ * @package           ForminatorExtraFields
+ * @author:           IQnection
+ * @copyright         2021 IQnection
+ * @license:          GPL-2.0-or-later
+ *
+ * @wordpress-plugin
+ * Plugin Name:       Forminator Extra Fields
+ * Description:       Provides extra/extended fields to Forminator.
+ * Version:           1.0.0
+ * Requires at least: 5.3
+ * Requires PHP:      7.1
+ * Author:            IQnection
+ * Author URI:        https://www.iqnection.com
+ * License:           GPL v2 or later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain:       forminator-extra-fields
+ */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	die();
 }
 
-define( 'FORMINATOR_EXTRA_FIELDS_VERSION', '1.0' );
+require_once(__DIR__.'/updates/check-requirements.php');
+require_once (__DIR__.'/updates/update.php');
+
+define( 'FORMINATOR_EXTRA_FIELDS_VERSION', '1.0.0' );
 
 if (!defined('FORMINATOR_EXTRA_ASSETS_DIR')) {
 	define('FORMINATOR_EXTRA_ASSETS_DIR', __DIR__.'/assets');

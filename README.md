@@ -14,9 +14,6 @@
 ### HTML Checkbox
 - Same as the Forminator Checkbox field, but allows you to use HTML as the checkbox label
 
-### Dropzone Upload Field
-- Extends the Forminator File Upload Field with a new Dropzone Upload Field selection
-- Uses DropzoneJS for a simple drag and drop file uploader
 
 
 Be sure to save your form changes
